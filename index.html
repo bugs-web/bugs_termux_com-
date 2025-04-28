@@ -1,1 +1,59 @@
-إضافة صفحة bugs_termux_com لدعم فلسطين
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bugs_termux_com - دعم فلسطين</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0f0;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding: 30px;
+        }
+        .card {
+            border: 2px solid #0f0;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 500px;
+        }
+        input {
+            background: #111;
+            border: 1px solid #0f0;
+            color: #0f0;
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        .counter {
+            font-size: 2em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body><h1>bugs_termux_com</h1>
+<h2>جمعية خيرية لدعم فلسطين</h2>
+
+<div class="card">
+    <p>ساهم بتبرعك لدعم المحتاجين في فلسطين. نحن نستقبل التبرعات بالعملات الرقمية فقط.</p>
+    
+    <h3>عناوين المحافظ:</h3>
+    <p>Bitcoin (BTC): <br><input type="text" value="bc1qexampleaddressforbtc" readonly></p>
+    <p>USDT (TRC20): <br><input type="text" value="Texampleaddressforusdt" readonly></p>
+
+    <div class="counter">
+        إجمالي التبرعات: <span id="donationCount">0</span> USDT
+    </div>
+</div>
+
+<script>
+    // عداد التبرعات (يمكنك ربطه مع API لاحقاً)
+    let donationCount = 3500; // قيمة مبدئية
+    document.getElementById("donationCount").textContent = donationCount;
+</script>
+
+</body>
+</html> 
+قصدك هذا
